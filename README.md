@@ -1,6 +1,6 @@
-#Understanding the Orthodox Canonical Class Form
+Understanding the Orthodox Canonical Class Form
 
-#The Orthodox Canonical Form in C++ involves defining 5 special member functions for a class.
+The Orthodox Canonical Form in C++ involves defining 5 special member functions for a class.
 
     Default Constructor
     Parameterized Constructor
@@ -22,7 +22,7 @@ public:
     }
 };
 
-#Default Constructor
+Default Constructor
 The Default Constructor is a special member function in a class that initializes an object with default values during the object’s instantiation.
 
 class Human {
@@ -35,7 +35,7 @@ public:
     ...
 };
 
-#Usage:
+Usage:
 int main(void) {
     Human h1;
     std::cout << h1.getName() << std::endl;
@@ -56,7 +56,7 @@ public:
     ...
 };
 
-#Usage:
+Usage:
 
 int main(void) {
     Human h1("Mark", 42);
@@ -77,7 +77,7 @@ public:
     ...
 };
 
-#Usage:
+Usage:
 
 int main(void) {
     Human h1("Mark", 42);
@@ -87,7 +87,7 @@ int main(void) {
     return (0);
 }
 
-#Assignment Operator
+Assignment Operator
 The Assignment Operator assigns the value of one object to another already-existing object. Here, we need to handle deep copying and self-assignment.
 
 class Human {
@@ -108,7 +108,7 @@ public:
 
 Note: this is a pointer of type Human * which points to the current object. Dereferencing it gives us access to the current object. If the assign operator gets called like this h2 = h1 then, h1 refers to other and h2 refer to this in this case.
 
-#Usage:
+Usage:
 
 int main() {
     Human h1("Mark", 42);
@@ -122,7 +122,7 @@ int main() {
     return (0);
 }
 
-#Destructor
+Destructor
 The Destructor is called when an object goes out of scope or is explicitly deleted. It is used to clean up resources such as memory or file handles.
 
 class Human {
